@@ -32,7 +32,7 @@ const image = await new Canvas.Goodbye()
   .setBackground("https://site.com/background.jpg")
   .toAttachment();
 
-const attachment = new Discord.Attachment(image.toBuffer(), "goodbye-image.png");
+const attachment = new Discord.MessageAttachment(image.toBuffer(), "goodbye-image.png");
 
 message.channel.send(attachment);
 ```
